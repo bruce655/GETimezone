@@ -125,7 +125,7 @@
                 zones: [
                     "台灣 / 中國 / 新加坡 / 馬來西亞", "印度 (新德里/班加羅爾/海得拉巴)", "日本 / 韓國", "澳洲 (雪梨/墨爾本)", "紐西蘭", "泰國 / 越南",
                     "約旦 / 沙烏地阿拉伯 / 土耳其", "羅馬尼亞", "德國 / 西班牙", "英國 / 葡萄牙",
-                    "美東 EST (紐約/夏洛特)", "美中 CST (芝加哥/Las Colinas)", "美西 PST (西雅圖/洛杉磯)", "哥斯大黎加"
+                    "美東 EST (紐約/夏洛特)", "美中 CST (芝加哥/Las Colinas)", "美西 PST (西雅圖/洛杉磯)", "哥斯大黎加", "鳳凰城 (Phoenix, AZ)"
                 ],
                 countries: { TW: "台灣", CN: "中國", SG: "新加坡", MY: "馬來西亞", IN: "印度", JP: "日本", KR: "韓國", AU: "澳洲", NZ: "紐西蘭", TH: "泰國", VN: "越南", JO: "約旦", TR: "土耳其", RO: "羅馬尼亞", DE: "德國", ES: "西班牙", GB: "英國", PT: "葡萄牙", US: "美國", CR: "哥斯大黎加" }
             },
@@ -136,7 +136,7 @@
                 zones: [
                     "Taiwan / China / SG / MY", "India (Delhi / BLR / HYD)", "Japan / Korea", "Australia (SYD/MEL)", "New Zealand", "Thailand / Vietnam",
                     "Jordan / Saudi / Turkey", "Romania", "Germany / Spain", "UK / Portugal",
-                    "EST (New York / Charlotte)", "CST (Chicago / Las Colinas)", "PST (Seattle / LA)", "Costa Rica"
+                    "EST (New York / Charlotte)", "CST (Chicago / Las Colinas)", "PST (Seattle / LA)", "Costa Rica", "Phoenix (AZ)"
                 ],
                 countries: { TW: "Taiwan", CN: "China", SG: "SG", MY: "MY", IN: "India", JP: "Japan", KR: "Korea", AU: "Australia", NZ: "New Zealand", TH: "Thailand", VN: "Vietnam", JO: "Jordan", TR: "Turkey", RO: "Romania", DE: "Germany", ES: "Spain", GB: "UK", PT: "Portugal", US: "US", CR: "Costa Rica" }
             },
@@ -147,7 +147,7 @@
                 zones: [
                     "台湾 / 中国 / シンガポール / マレーシア", "インド (デリー/BLR/HYD)", "日本 / 韓国", "オーストラリア (シドニー/メルボルン)", "ニュージーランド", "タイ / ベトナム",
                     "ヨルダン / サウジ / トルコ", "ルーマニア", "ドイツ / スペイン", "イギリス / ポルトガル",
-                    "EST (ニューヨーク/シャーロット)", "CST (シカゴ/Las Colinas)", "PST (シアトル/ロサンゼルス)", "コスタリカ"
+                    "EST (ニューヨーク/シャーロット)", "CST (シカゴ/Las Colinas)", "PST (シアトル/ロサンゼルス)", "コスタリカ", "フェニックス (Phoenix, AZ)"
                 ],
                 countries: { TW: "台湾", CN: "中国", SG: "シンガポール", MY: "マレーシア", IN: "インド", JP: "日本", KR: "韓国", AU: "オーストラリア", NZ: "ニュージーランド", TH: "タイ", VN: "ベトナム", JO: "ヨルダン", TR: "トルコ", RO: "ルーマニア", DE: "ドイツ", ES: "スペイン", GB: "イギリス", PT: "ポルトガル", US: "米国", CR: "コスタリカ" }
             },
@@ -158,7 +158,7 @@
                 zones: [
                     "대만 / 중국 / 싱가포르 / 말레이시아", "인도 (델리/BLR/HYD)", "일본 / 한국", "호주 (시드니/멜버른)", "뉴질랜드", "태국 / 베트남",
                     "요르단 / 사우디아라비아 / 튀르키예", "루마니아", "독일 / 스페인", "영국 / 포르투갈",
-                    "EST (뉴욕/샬럿)", "CST (시카고/Las Colinas)", "PST (시애틀/LA)", "코스타리카"
+                    "EST (뉴욕/샬럿)", "CST (시카고/Las Colinas)", "PST (시애틀/LA)", "코스타리카", "피닉스 (Phoenix, AZ)"
                 ],
                 countries: { TW: "대만", CN: "중국", SG: "싱가포르", MY: "말레이시아", IN: "인도", JP: "일본", KR: "한국", AU: "호주", NZ: "뉴질랜드", TH: "태국", VN: "베트남", JO: "요르단", TR: "튀르키예", RO: "루마니아", DE: "독일", ES: "스페인", GB: "영국", PT: "포르투갈", US: "미국", CR: "코스타리카" }
             }
@@ -214,7 +214,8 @@
                         { id: 'est', name: t.zones[10], tz: 'America/New_York', countries: ['US'] },
                         { id: 'cst', name: t.zones[11], tz: 'America/Chicago', countries: ['US'] },
                         { id: 'pst', name: t.zones[12], tz: 'America/Los_Angeles', countries: ['US'] },
-                        { id: 'cr', name: t.zones[13], tz: 'America/Costa_Rica', countries: ['CR'] }
+                        { id: 'cr', name: t.zones[13], tz: 'America/Costa_Rica', countries: ['CR'] },
+                        { id: 'phx', name: t.zones[14], tz: 'America/Phoenix', countries: ['US'] }
                     ]
                 }
             ];
@@ -461,7 +462,8 @@
                     { name: "Las Colinas (CST)", lat: 32.8687, lng: -96.9405, tz: "America/Chicago" },
                     { name: "Los Angeles (PST)", lat: 34.0522, lng: -118.2437, tz: "America/Los_Angeles" }, 
                     { name: "Seattle (PST)", lat: 47.6062, lng: -122.3321, tz: "America/Los_Angeles" },
-                    { name: "San Jose (Costa Rica)", lat: 9.9281, lng: -84.0907, tz: "America/Costa_Rica" }
+                    { name: "San Jose (Costa Rica)", lat: 9.9281, lng: -84.0907, tz: "America/Costa_Rica" },
+                    { name: "Phoenix (AZ)", lat: 33.4484, lng: -112.0740, tz: "America/Phoenix" }
                 ];
 
                 const bounds = [];
